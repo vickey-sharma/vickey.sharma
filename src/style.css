@@ -168,19 +168,28 @@
   object-fit: cover;
   display: block;
 }
-  .hero-portrait-label {
+.hero-portrait-label {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+
+  width: calc(100% - 95px);
+  max-width: 100%;
+
   font-size: 11px;
   color: var(--muted);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  white-space: nowrap;
+
   text-align: center;
-   background-color: #121417;
-    padding: 5px;
+  line-height: 1.4;
+
+  background-color: #121417;
+  padding: 5px 8px;
+
+  white-space: normal;
+  overflow-wrap: break-word;
 }
   .hero-scroll-hint {
   margin-top: 32px;
