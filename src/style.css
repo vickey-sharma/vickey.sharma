@@ -93,16 +93,90 @@
     transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--text); }
+
   .nav-contact {
-    font-size: 13px;
-    color: var(--text);
-    text-decoration: none;
-    border: 1px solid var(--border);
-    padding: 8px 18px;
-    border-radius: 100px;
-    transition: background 0.2s, border-color 0.2s;
-  }
-  .nav-contact:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.2); }
+  font-size: 13px;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 8px 18px;
+  border-radius: 100px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.nav-contact:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.mail-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.mail-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s ease;
+}
+
+.nav-contact:hover .mail-icon svg {
+  transform: translateY(-1px);
+}
+
+  .nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-resume {
+  font-size: 13px;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 8px 18px;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.nav-resume:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.resume-arrow {
+  font-size: 15px;
+  line-height: 1;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.nav-resume:hover .resume-arrow {
+  transform: translateY(2px);
+}
+
 
   /* ─── HERO ─── */
 .hero {
