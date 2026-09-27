@@ -55,23 +55,25 @@
   }
 
   /* ─── NAV ─── */
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-    height: 64px;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.4s, background 0.4s;
-  }
-  nav.scrolled {
-    border-color: var(--border);
-    background: rgba(18,20,23,0.92);
-    backdrop-filter: blur(16px);
-  }
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 64px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: rgba(18,20,23,0.45);
+  backdrop-filter: blur(8px);
+  transition: border-color 0.4s, background 0.4s, backdrop-filter 0.4s;
+}
+nav.scrolled {
+  border-color: var(--border);
+  background: rgba(18,20,23,0.92);
+  backdrop-filter: blur(16px);
+}
   .nav-logo {
     font-family: var(--font-body);
     font-size: 14px;
@@ -184,7 +186,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 90px 40px 0;
+  padding: 40px 40px 60px;
   gap: 0;
 }
  .hero-left {
