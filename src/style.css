@@ -186,7 +186,7 @@ nav.scrolled {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 40px 40px 60px;
+  padding: 10px 40px 60px;
   gap: 0;
 }
  .hero-left {
